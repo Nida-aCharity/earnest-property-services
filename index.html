@@ -1,0 +1,2927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Earnest Property Services">
+
+<title>Earnest Property Services | Property Valuation, Surveying & Consultancy in Uganda</title>
+
+<meta name="description" content="Earnest Property Services provides professional property valuation, land surveying, property management, project management, property development and property research services across Uganda.">
+
+<meta name="theme-color" content="#073b9b">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+:root {
+    --blue: #063b9f;
+    --blue-dark: #052d78;
+    --blue-deep: #061b3d;
+
+    --red: #d71920;
+    --red-dark: #ad1117;
+
+    --white: #ffffff;
+    --off-white: #f7f9fc;
+    --light-blue: #edf3ff;
+
+    --text: #172033;
+    --muted: #667085;
+    --border: #e5e9f0;
+
+    --shadow: 0 15px 45px rgba(6, 27, 61, .10);
+
+    --heading: "Manrope", sans-serif;
+    --body: "Inter", sans-serif;
+
+    --radius: 12px;
+}
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body);
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+.container {
+    width: min(1180px, 92%);
+    margin: auto;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+.section {
+    padding: 78px 0;
+}
+
+.section-header {
+    max-width: 680px;
+    margin-bottom: 45px;
+}
+
+.section-header.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: var(--red);
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.eyebrow::before {
+    content: "";
+    width: 24px;
+    height: 2px;
+    background: var(--red);
+}
+
+.section-title {
+    font-family: var(--heading);
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    color: var(--blue-deep);
+    margin-bottom: 16px;
+}
+
+.section-title span {
+    color: var(--blue);
+}
+
+.section-description {
+    color: var(--muted);
+    font-size: 15px;
+    max-width: 650px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    min-height: 48px;
+    padding: 0 22px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: .25s ease;
+    border: 1px solid transparent;
+}
+
+.btn-primary {
+    color: white;
+    background: var(--blue);
+}
+
+.btn-primary:hover {
+    background: var(--blue-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(6,59,159,.22);
+}
+
+.btn-red {
+    background: var(--red);
+    color: white;
+}
+
+.btn-red:hover {
+    background: var(--red-dark);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    color: white;
+    border-color: rgba(255,255,255,.35);
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--blue);
+}
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.topbar {
+    background: var(--blue-deep);
+    color: rgba(255,255,255,.75);
+    font-size: 11px;
+}
+
+.topbar-inner {
+    min-height: 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.topbar-links {
+    display: flex;
+    gap: 22px;
+}
+
+.topbar a:hover {
+    color: white;
+}
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: rgba(255,255,255,.96);
+    backdrop-filter: blur(14px);
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 210px;
+    max-height: 62px;
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    list-style: none;
+}
+
+.nav-links a {
+    position: relative;
+    font-size: 12px;
+    font-weight: 700;
+    color: #344054;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--red);
+    transition: .25s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--blue);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-cta {
+    background: var(--red) !important;
+    color: white !important;
+    padding: 11px 17px;
+    border-radius: 5px;
+}
+
+.nav-cta::after {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.menu-btn span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px 0;
+    background: var(--blue-deep);
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+    position: relative;
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    background:
+        linear-gradient(90deg,
+        rgba(4,25,58,.98) 0%,
+        rgba(4,30,70,.94) 50%,
+        rgba(4,30,70,.72) 100%),
+        linear-gradient(135deg,#061b3d,#063b9f);
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    right: -180px;
+    top: -120px;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 70px rgba(255,255,255,.015),
+        0 0 0 140px rgba(255,255,255,.012);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    padding: 85px 0 110px;
+    max-width: 760px;
+}
+
+.hero-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    color: white;
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.14);
+    padding: 8px 13px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+
+.hero-kicker i {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--red);
+}
+
+.hero h1 {
+    font-family: var(--heading);
+    color: white;
+    font-size: clamp(42px, 6vw, 72px);
+    line-height: 1.03;
+    letter-spacing: -3px;
+    max-width: 780px;
+    margin-bottom: 22px;
+}
+
+.hero h1 span {
+    color: #4e8dff;
+}
+
+.hero-text {
+    color: rgba(255,255,255,.72);
+    font-size: 16px;
+    max-width: 630px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hero-bottom {
+    position: absolute;
+    z-index: 4;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(3,22,48,.75);
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+
+.hero-stats {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.hero-stat {
+    padding: 18px 22px;
+    border-right: 1px solid rgba(255,255,255,.1);
+}
+
+.hero-stat:last-child {
+    border-right: 0;
+}
+
+.hero-stat strong {
+    display: block;
+    font-family: var(--heading);
+    font-size: 22px;
+    color: white;
+}
+
+.hero-stat span {
+    display: block;
+    color: rgba(255,255,255,.5);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* =========================================================
+   TRUST STRIP
+========================================================= */
+
+.trust {
+    padding: 22px 0;
+    background: var(--white);
+    border-bottom: 1px solid var(--border);
+}
+
+.trust-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.trust-title {
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+.trust-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    align-items: center;
+}
+
+.trust-item {
+    color: #475467;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about {
+    background: var(--off-white);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.about-copy p {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.85;
+    margin-bottom: 17px;
+}
+
+.about-copy strong {
+    color: var(--blue-deep);
+}
+
+.about-points {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+    margin: 28px 0;
+}
+
+.about-point {
+    padding: 18px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+}
+
+.about-point strong {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.about-point span {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+/* Professional card */
+
+.professional-card {
+    background: var(--blue-deep);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.professional-top {
+    padding: 28px;
+    background: linear-gradient(135deg,var(--blue),var(--blue-dark));
+}
+
+.professional-top h3 {
+    color: white;
+    font-family: var(--heading);
+    font-size: 24px;
+    margin-bottom: 4px;
+}
+
+.professional-top p {
+    color: rgba(255,255,255,.65);
+    font-size: 12px;
+}
+
+.professional-body {
+    padding: 28px;
+    color: white;
+}
+
+.stamp-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+.stamp-wrap img {
+    width: 185px;
+    height: 185px;
+    object-fit: contain;
+    background: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.credentials {
+    display: grid;
+    gap: 12px;
+}
+
+.credential {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    padding: 13px;
+    background: rgba(255,255,255,.06);
+    border-radius: 7px;
+}
+
+.credential b {
+    display: block;
+    color: white;
+    font-size: 12px;
+}
+
+.credential span {
+    display: block;
+    color: rgba(255,255,255,.55);
+    font-size: 10px;
+}
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services {
+    background: var(--off-white);
+}
+
+.service-category {
+    margin-bottom: 62px;
+}
+
+.service-category:last-child {
+    margin-bottom: 0;
+}
+
+.category-heading {
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    margin-bottom: 22px;
+}
+
+.category-heading::before {
+    content: "";
+
+    width: 5px;
+    height: 30px;
+
+    background: var(--red);
+
+    border-radius: 2px;
+}
+
+.category-heading h2 {
+    font-family: var(--heading);
+
+    color: var(--blue-deep);
+
+    font-size: 23px;
+}
+
+.category-heading p {
+    color: var(--muted);
+
+    font-size: 11px;
+
+    margin-left: 5px;
+}
+
+
+/* =========================================================
+   SERVICE GRID
+========================================================= */
+
+.services-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.service-card {
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 11px;
+
+    overflow: hidden;
+
+    transition: .3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+
+    border-color: #c7d5ee;
+
+    box-shadow: var(--shadow);
+}
+
+
+/* =========================================================
+   SERVICE IMAGE
+========================================================= */
+
+.service-photo {
+    position: relative;
+
+    height: 220px;
+
+    overflow: hidden;
+
+    background: var(--blue-deep);
+}
+
+.service-photo img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform .5s ease;
+}
+
+.service-card:hover .service-photo img {
+    transform: scale(1.06);
+}
+
+
+/* Dark overlay */
+
+.service-photo::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(3,20,45,.05) 20%,
+            rgba(3,20,45,.65) 100%
+        );
+
+    pointer-events: none;
+}
+
+
+/* Service label */
+
+.service-photo span {
+    position: absolute;
+
+    z-index: 3;
+
+    left: 15px;
+    bottom: 15px;
+
+    background: var(--red);
+
+    color: white;
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    padding: 7px 10px;
+
+    border-radius: 4px;
+
+    text-transform: uppercase;
+
+    letter-spacing: .4px;
+}
+
+
+/* =========================================================
+   SERVICE BODY
+========================================================= */
+
+.service-body {
+    padding: 24px;
+}
+
+.service-number {
+    color: var(--red);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+}
+
+.service-card h3 {
+    font-family: var(--heading);
+
+    color: var(--blue-deep);
+
+    font-size: 18px;
+
+    line-height: 1.25;
+
+    margin: 7px 0 10px;
+}
+
+.service-card p {
+    color: var(--muted);
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   SERVICE CTA
+========================================================= */
+
+.service-cta {
+    margin-top: 60px;
+
+    padding: 45px;
+
+    background:
+        linear-gradient(
+            110deg,
+            var(--blue-deep),
+            var(--blue)
+        );
+
+    border-radius: 13px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+    color: white;
+}
+
+.service-cta h2 {
+    font-family: var(--heading);
+
+    font-size: 27px;
+
+    margin-bottom: 7px;
+}
+
+.service-cta p {
+    color: rgba(255,255,255,.65);
+
+    font-size: 12px;
+
+    max-width: 600px;
+}
+
+.service-cta-actions {
+    display: flex;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   WHY US
+========================================================= */
+
+.why {
+    background: var(--off-white);
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 70px;
+    align-items: center;
+}
+
+.why-list {
+    display: grid;
+    gap: 12px;
+}
+
+.why-item {
+    display: flex;
+    gap: 15px;
+    padding: 17px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+}
+
+.why-icon {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 7px;
+    background: var(--light-blue);
+    color: var(--blue);
+    display: grid;
+    place-items: center;
+    font-weight: 800;
+}
+
+.why-item h3 {
+    font-family: var(--heading);
+    font-size: 13px;
+    margin-bottom: 3px;
+}
+
+.why-item p {
+    color: var(--muted);
+    font-size: 11px;
+}
+
+.why-panel {
+    position: relative;
+    background: var(--blue);
+    padding: 38px;
+    border-radius: 14px;
+    overflow: hidden;
+    color: white;
+}
+
+.why-panel::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: -120px;
+    top: -120px;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 50%;
+}
+
+.why-panel h3 {
+    position: relative;
+    font-family: var(--heading);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.why-panel p {
+    position: relative;
+    color: rgba(255,255,255,.68);
+    font-size: 13px;
+    line-height: 1.75;
+    margin-bottom: 25px;
+}
+
+.why-badge {
+    position: relative;
+    display: inline-block;
+    padding: 10px 13px;
+    background: white;
+    color: var(--blue);
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+/* =========================================================
+   PROCESS
+========================================================= */
+
+.process {
+    background: white;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.process-step {
+    position: relative;
+    padding: 25px 20px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+
+.process-number {
+    width: 38px;
+    height: 38px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--blue);
+    color: white;
+    font-family: var(--heading);
+    font-weight: 800;
+    font-size: 13px;
+    margin-bottom: 17px;
+}
+
+.process-step h3 {
+    font-family: var(--heading);
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+
+.process-step p {
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.65;
+}
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta {
+    padding: 65px 0;
+    background:
+        linear-gradient(100deg,var(--blue-deep),var(--blue));
+    color: white;
+}
+
+.cta-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.cta h2 {
+    font-family: var(--heading);
+    font-size: clamp(28px,4vw,42px);
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.cta p {
+    color: rgba(255,255,255,.65);
+    font-size: 13px;
+    max-width: 590px;
+}
+
+.cta-actions {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact {
+    background: var(--off-white);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 65px;
+    align-items: start;
+}
+
+.contact-details {
+    display: grid;
+    gap: 14px;
+    margin-top: 28px;
+}
+
+.contact-item {
+    display: flex;
+    gap: 13px;
+    padding: 16px;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.contact-icon {
+    width: 37px;
+    height: 37px;
+    border-radius: 7px;
+    background: var(--light-blue);
+    color: var(--blue);
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    font-weight: 800;
+}
+
+.contact-item small {
+    display: block;
+    color: var(--red);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.contact-item strong {
+    display: block;
+    color: var(--text);
+    font-size: 12px;
+    margin-top: 2px;
+}
+
+.contact-item a:hover {
+    color: var(--blue);
+}
+
+.form-box {
+    background: white;
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--red);
+    border-radius: 11px;
+    padding: 30px;
+    box-shadow: var(--shadow);
+}
+
+.form-box h3 {
+    font-family: var(--heading);
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.form-box > p {
+    color: var(--muted);
+    font-size: 12px;
+    margin-bottom: 24px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+}
+
+.field {
+    margin-bottom: 13px;
+}
+
+.field label {
+    display: block;
+    color: #344054;
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin-bottom: 5px;
+}
+
+.field input,
+.field select,
+.field textarea {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: #fbfcfe;
+    padding: 11px 12px;
+    outline: none;
+    color: var(--text);
+    font-size: 12px;
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 3px rgba(6,59,159,.07);
+}
+
+.field textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.form-submit {
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    background: var(--blue);
+    color: white;
+    padding: 14px;
+    border-radius: 6px;
+    font-weight: 800;
+    font-size: 13px;
+    transition: .25s;
+}
+
+.form-submit:hover {
+    background: var(--blue-dark);
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    background: var(--blue-deep);
+    color: white;
+}
+
+.footer-main {
+    padding: 55px 0 40px;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr 1fr;
+    gap: 55px;
+}
+
+.footer-logo {
+    width: 220px;
+    background: white;
+    padding: 7px;
+    border-radius: 5px;
+    margin-bottom: 18px;
+}
+
+.footer-about {
+    color: rgba(255,255,255,.5);
+    font-size: 11px;
+    max-width: 330px;
+    line-height: 1.8;
+}
+
+.footer-col h4 {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.footer-col ul {
+    list-style: none;
+    display: grid;
+    gap: 9px;
+}
+
+.footer-col li a {
+    color: rgba(255,255,255,.5);
+    font-size: 11px;
+}
+
+.footer-col li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,.08);
+    padding: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    color: rgba(255,255,255,.35);
+    font-size: 10px;
+}
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+.whatsapp {
+    position: fixed;
+    right: 22px;
+    bottom: 22px;
+    z-index: 2000;
+
+    width: 58px;
+    height: 58px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+    background: #25D366;
+    color: white;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,.2);
+
+    transition: .25s;
+}
+
+.whatsapp:hover {
+    transform: translateY(-4px) scale(1.05);
+}
+
+.whatsapp svg {
+    width: 29px;
+    height: 29px;
+    fill: white;
+}
+
+/* =========================================================
+   SCROLL TOP
+========================================================= */
+
+.scroll-top {
+    position: fixed;
+    right: 25px;
+    bottom: 92px;
+
+    width: 38px;
+    height: 38px;
+
+    border: 0;
+    border-radius: 5px;
+
+    background: var(--blue);
+    color: white;
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: .25s;
+}
+
+.scroll-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: .7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width: 950px) {
+
+    .nav-links {
+        position: fixed;
+        top: 114px;
+        left: 0;
+        right: 0;
+
+        background: white;
+
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+
+        padding: 20px 6% 25px;
+
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 20px 30px rgba(0,0,0,.08);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 9px 0;
+    }
+
+    .nav-links a::after {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .about-grid,
+    .why-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .process-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 650px) {
+
+    .topbar {
+        display: none;
+    }
+
+    .nav-inner {
+        min-height: 74px;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    .nav-links {
+        top: 74px;
+    }
+
+    .hero {
+        min-height: 700px;
+    }
+
+    .hero-content {
+        padding: 65px 0 145px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+        letter-spacing: -2px;
+    }
+
+    .hero-text {
+        font-size: 14px;
+    }
+
+    .hero-stats {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-stat {
+        padding: 14px;
+    }
+
+    .hero-stat strong {
+        font-size: 18px;
+    }
+
+    .trust-inner {
+        display: block;
+    }
+
+    .trust-items {
+        margin-top: 14px;
+        gap: 15px;
+    }
+
+    .section {
+        padding: 58px 0;
+    }
+
+    .about-points {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-inner {
+        display: block;
+    }
+
+    .cta-actions {
+        margin-top: 22px;
+        flex-wrap: wrap;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .whatsapp {
+        width: 54px;
+        height: 54px;
+        right: 15px;
+        bottom: 15px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- ======================================================
+     TOP BAR
+====================================================== -->
+
+<div class="topbar">
+    <div class="container topbar-inner">
+
+        <span>
+            Professional Property & Real Estate Consultancy · Uganda
+        </span>
+
+        <div class="topbar-links">
+            <a href="tel:+256781515588">+256 781 515 588</a>
+            <a href="mailto:earnestpropertysv@gmail.com">
+                earnestpropertysv@gmail.com
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- ======================================================
+     NAVIGATION
+====================================================== -->
+
+<header class="navbar">
+
+    <div class="container nav-inner">
+
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Earnest Property Services">
+        </a>
+
+        <button class="menu-btn" id="menuBtn" aria-label="Open navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
+
+    <li><a href="index.html" class="active">Home</a></li>
+
+    <li><a href="about.html">About</a></li>
+
+    <li><a href="services.html">Services</a></li>
+
+    <li><a href="projects.html">Projects</a></li>
+
+    <li><a href="contact.html">Contact</a></li>
+
+    <li>
+        <a href="contact.html" class="nav-cta">
+            Request a Service
+        </a>
+    </li>
+
+</ul>
+
+    </div>
+
+</header>
+
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<section class="hero" id="home">
+
+    <div class="container">
+
+        <div class="hero-content reveal">
+
+            <div class="hero-kicker">
+                <i></i>
+                Property & Real Estate Consultancy · Uganda
+            </div>
+
+            <h1>
+                Professional insight for
+                <span>property decisions.</span>
+            </h1>
+
+            <p class="hero-text">
+                Earnest Property Services provides professional
+                property valuation, land surveying, property and
+                project management, property development and
+                property research services across Uganda.
+            </p>
+
+            <div class="hero-actions">
+
+               <a href="contact.html" class="btn btn-red">
+                  Request a Consultation →
+                </a>
+
+             <a href="services.html" class="btn btn-outline">
+              Explore Our Services
+             </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-bottom">
+
+        <div class="container">
+
+            <div class="hero-stats">
+
+                <div class="hero-stat">
+                    <strong>Valuation</strong>
+                    <span>Professional Reports</span>
+                </div>
+
+                <div class="hero-stat">
+                    <strong>Surveying</strong>
+                    <span>Land & Property</span>
+                </div>
+
+                <div class="hero-stat">
+                    <strong>Management</strong>
+                    <span>Property & Projects</span>
+                </div>
+
+                <div class="hero-stat">
+                    <strong>Development</strong>
+                    <span>Research & Advisory</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     TRUST
+====================================================== -->
+
+<section class="trust">
+
+    <div class="container trust-inner">
+
+        <span class="trust-title">
+            Professional Standards
+        </span>
+
+        <div class="trust-items">
+
+            <span class="trust-item">SRB Registered</span>
+            <span class="trust-item">M.I.S.U</span>
+            <span class="trust-item">R.S.U</span>
+            <span class="trust-item">BSc. Land Economics</span>
+            <span class="trust-item">Uganda</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     ABOUT
+====================================================== -->
+
+<section class="section about" id="about">
+
+    <div class="container about-grid">
+
+        <div class="about-copy reveal">
+
+            <span class="eyebrow">Who We Are</span>
+
+            <h2 class="section-title">
+                A professional partner for your <span>property.</span>
+            </h2>
+
+            <p>
+                <strong>Earnest Property Services</strong> is a
+                professional property and real estate consultancy
+                serving clients across Uganda.
+            </p>
+
+            <p>
+                We combine technical knowledge, market intelligence
+                and practical field experience to provide dependable
+                advice for individuals, financial institutions,
+                businesses, investors and other organisations.
+            </p>
+
+            <p>
+                Our work is built around accuracy, professional
+                integrity, confidentiality and practical solutions
+                that help clients make better property decisions.
+            </p>
+
+            <div class="about-points">
+
+                <div class="about-point">
+                    <strong>Professional Expertise</strong>
+                    <span>Qualified and professionally registered personnel.</span>
+                </div>
+
+                <div class="about-point">
+                    <strong>Market Knowledge</strong>
+                    <span>Local property and real estate market insight.</span>
+                </div>
+
+                <div class="about-point">
+                    <strong>Nationwide Reach</strong>
+                    <span>Services available across Uganda.</span>
+                </div>
+
+                <div class="about-point">
+                    <strong>Client Focused</strong>
+                    <span>Clear reports and practical property advice.</span>
+                </div>
+
+            </div>
+
+            <a href="about.html" class="btn btn-primary">
+              Learn More About Us →
+              </a>
+
+        </div>
+
+
+        <div class="professional-card reveal">
+
+            <div class="professional-top">
+
+                <h3>Professional Credentials</h3>
+
+                <p>
+                    Earnest Property Services
+                </p>
+
+            </div>
+
+            <div class="professional-body">
+
+                <div class="stamp-wrap">
+
+                    <img
+                        src="stamp.png"
+                        alt="Official Earnest Property Services professional stamp"
+                    >
+
+                </div>
+
+                <div class="credentials">
+
+                    <div class="credential">
+
+                        <div>
+                            <b>Ojok Steven</b>
+                            <span>Lead Valuer & Principal</span>
+                        </div>
+
+                    </div>
+
+                    <div class="credential">
+
+                        <div>
+                            <b>BSc. Land Economics</b>
+                            <span>Makerere University</span>
+                        </div>
+
+                    </div>
+
+                    <div class="credential">
+
+                        <div>
+                            <b>M.I.S.U</b>
+                            <span>Member, Institution of Surveyors of Uganda</span>
+                        </div>
+
+                    </div>
+
+                    <div class="credential">
+
+                        <div>
+                            <b>R.S.U · SRB No. 555</b>
+                            <span>Registered Surveyor · Uganda</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     SERVICES
+====================================================== -->
+
+<section class="section services">
+
+    <div class="container">
+
+        <div class="section-header center reveal">
+
+            <span class="eyebrow">
+                Our Expertise
+            </span>
+
+            <h2 class="section-title">
+                Services designed around
+                <span>your needs.</span>
+            </h2>
+
+            <p
+                class="section-description"
+                style="margin:auto;"
+            >
+                Explore our core professional property services.
+                Detailed information and project examples can be
+                viewed throughout the website.
+            </p>
+
+        </div>
+
+
+        <!-- ==================================================
+             CATEGORY 1
+        ================================================== -->
+
+        <div class="service-category">
+
+            <div class="category-heading reveal">
+
+                <h2>
+                    Valuation & Land Surveying
+                </h2>
+
+                <p>
+                    Technical property assessment and field services
+                </p>
+
+            </div>
+
+
+            <div class="services-grid">
+
+
+                <!-- SERVICE 01 -->
+
+                <article class="service-card reveal">
+
+                    <div class="service-photo">
+
+                        <img
+                            src="images/valuation1.jpg"
+                            alt="Property valuation and inspection"
+                            loading="lazy"
+                        >
+
+                        <span>
+                            Field Valuation
+                        </span>
+
+                    </div>
+
+
+                    <div class="service-body">
+
+                        <span class="service-number">
+                            01 · VALUATION
+                        </span>
+
+                        <h3>
+                            Property Valuation
+                        </h3>
+
+                        <p>
+                            Professional valuation of residential,
+                            commercial, industrial and other property
+                            for financing, sale, purchase, insurance,
+                            accounting and other purposes.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SERVICE 02 -->
+
+                <article class="service-card reveal">
+
+                    <div class="service-photo">
+
+                        <img
+                            src="images/surveying1.jpg"
+                            alt="Professional land surveying"
+                            loading="lazy"
+                        >
+
+                        <span>
+                            Land Surveying
+                        </span>
+
+                    </div>
+
+
+                    <div class="service-body">
+
+                        <span class="service-number">
+                            02 · SURVEYING
+                        </span>
+
+                        <h3>
+                            Land Surveying
+                        </h3>
+
+                        <p>
+                            Professional land surveying services
+                            supporting property acquisition,
+                            development, boundaries and land
+                            management decisions.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SERVICE 03 -->
+
+                <article class="service-card reveal">
+
+                    <div class="service-photo">
+
+                        <img
+                            src="images/research1.jpg"
+                            alt="Property research and market analysis"
+                            loading="lazy"
+                        >
+
+                        <span>
+                            Market Research
+                        </span>
+
+                    </div>
+
+
+                    <div class="service-body">
+
+                        <span class="service-number">
+                            03 · RESEARCH
+                        </span>
+
+                        <h3>
+                            Property Research
+                        </h3>
+
+                        <p>
+                            Property market research, market
+                            intelligence and analysis to support
+                            investment and real estate decisions.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             CATEGORY 2
+        ================================================== -->
+
+        <div class="service-category">
+
+            <div class="category-heading reveal">
+
+                <h2>
+                    Property & Project Management
+                </h2>
+
+                <p>
+                    Professional oversight from property operations
+                    to project delivery
+                </p>
+
+            </div>
+
+
+            <div class="services-grid">
+
+
+                <!-- SERVICE 04 -->
+
+                <article class="service-card reveal">
+
+                    <div class="service-photo">
+
+                        <img
+                            src="images/property-management1.jpg"
+                            alt="Professional property management"
+                            loading="lazy"
+                        >
+
+                        <span>
+                            Property Management
+                        </span>
+
+                    </div>
+
+
+                    <div class="service-body">
+
+                        <span class="service-number">
+                            04 · MANAGEMENT
+                        </span>
+
+                        <h3>
+                            Property Management
+                        </h3>
+
+                        <p>
+                            Professional management of property,
+                            tenant relationships, maintenance,
+                            inspections and operational matters.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SERVICE 05 -->
+
+                <article class="service-card reveal">
+
+                    <div class="service-photo">
+
+                        <img
+                            src="images/project-management1.jpg"
+                            alt="Property project management and construction supervision"
+                            loading="lazy"
+                        >
+
+                        <span>
+                            Project Management
+                        </span>
+
+                    </div>
+
+
+                    <div class="service-body">
+
+                        <span class="service-number">
+                            05 · PROJECTS
+                        </span>
+
+                        <h3>
+                            Project Management
+                        </h3>
+
+                        <p>
+                            Coordination and oversight of property
+                            projects from planning through execution,
+                            helping clients maintain quality, time
+                            and cost control.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SERVICE 06 -->
+
+                <article class="service-card reveal">
+
+                    <div class="service-photo">
+
+                        <img
+                            src="images/property-development1.jpg"
+                            alt="Property development and construction project"
+                            loading="lazy"
+                        >
+
+                        <span>
+                            Development Advisory
+                        </span>
+
+                    </div>
+
+
+                    <div class="service-body">
+
+                        <span class="service-number">
+                            06 · DEVELOPMENT
+                        </span>
+
+                        <h3>
+                            Property Development
+                        </h3>
+
+                        <p>
+                            Property development advisory services
+                            including feasibility, development
+                            planning, investment assessment and
+                            project strategy.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             SPECIALIST SERVICES
+        ================================================== -->
+
+        <div class="service-category">
+
+            <div class="category-heading reveal">
+
+                <h2>
+                    Specialist Property Services
+                </h2>
+
+                <p>
+                    Additional professional valuation services
+                </p>
+
+            </div>
+
+
+            <div class="services-grid">
+
+
+                <!-- SERVICE 07 -->
+
+                <article class="service-card reveal">
+
+                    <div class="service-photo">
+
+                        <img
+                            src="images/insurance.jpg"
+                            alt="Insurance property valuation"
+                            loading="lazy"
+                        >
+
+                        <span>
+                            Insurance
+                        </span>
+
+                    </div>
+
+
+                    <div class="service-body">
+
+                        <span class="service-number">
+                            07 · INSURANCE
+                        </span>
+
+                        <h3>
+                            Insurance Valuation
+                        </h3>
+
+                        <p>
+                            Assessment of replacement and
+                            reinstatement values to support
+                            appropriate property insurance
+                            decisions.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SERVICE 08 -->
+
+                <article class="service-card reveal">
+
+                    <div class="service-photo">
+
+                        <img
+                            src="images/mortgage.jpg"
+                            alt="Mortgage and bank property valuation"
+                            loading="lazy"
+                        >
+
+                        <span>
+                            Banking
+                        </span>
+
+                    </div>
+
+
+                    <div class="service-body">
+
+                        <span class="service-number">
+                            08 · FINANCE
+                        </span>
+
+                        <h3>
+                            Mortgage & Bank Valuation
+                        </h3>
+
+                        <p>
+                            Professional valuation reports prepared
+                            to support lending, mortgage and financial
+                            institution requirements.
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- SERVICE 09 -->
+
+                <article class="service-card reveal">
+
+                    <div class="service-photo">
+
+                        <img
+                            src="images/court.webp"
+                            alt="Court and dispute property valuation"
+                            loading="lazy"
+                        >
+
+                        <span>
+                            Legal
+                        </span>
+
+                    </div>
+
+
+                    <div class="service-body">
+
+                        <span class="service-number">
+                            09 · LEGAL
+                        </span>
+
+                        <h3>
+                            Court & Dispute Valuation
+                        </h3>
+
+                        <p>
+                            Independent property valuation services
+                            supporting legal matters, disputes,
+                            compensation and other proceedings.
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+</section>
+<!-- ======================================================
+     WHY US
+====================================================== -->
+
+<section class="section why" id="why">
+
+    <div class="container why-grid">
+
+        <div class="reveal">
+
+            <span class="eyebrow">Why Earnest</span>
+
+            <h2 class="section-title">
+                Professional advice you can <span>depend on.</span>
+            </h2>
+
+            <p class="section-description">
+                Property decisions involve significant financial,
+                legal and investment considerations. We provide
+                professional information and advice designed to
+                give our clients greater confidence.
+            </p>
+
+            <div class="why-list" style="margin-top:28px;">
+
+                <div class="why-item">
+
+                    <div class="why-icon">01</div>
+
+                    <div>
+                        <h3>Professional & Qualified</h3>
+                        <p>
+                            Technical property knowledge supported
+                            by professional training and registration.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="why-item">
+
+                    <div class="why-icon">02</div>
+
+                    <div>
+                        <h3>Independent Advice</h3>
+                        <p>
+                            Objective property assessments focused
+                            on the client's requirements.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="why-item">
+
+                    <div class="why-icon">03</div>
+
+                    <div>
+                        <h3>Practical Market Knowledge</h3>
+                        <p>
+                            Local understanding of Uganda's property
+                            and real estate environment.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="why-item">
+
+                    <div class="why-icon">04</div>
+
+                    <div>
+                        <h3>Clear Professional Reports</h3>
+                        <p>
+                            Well-structured reports designed to be
+                            useful to decision makers.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="why-panel reveal">
+
+            <h3>
+                One property. Many decisions.
+            </h3>
+
+            <p>
+                Whether you are financing, acquiring, developing,
+                managing, selling or protecting property, having
+                reliable professional information can make the
+                difference.
+            </p>
+
+            <p>
+                Earnest Property Services brings valuation,
+                surveying, management, development and research
+                together under one professional property service.
+            </p>
+
+            <span class="why-badge">
+                EARNEST PROPERTY SERVICES · UGANDA
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     PROCESS
+====================================================== -->
+
+<section class="section process" id="process">
+
+    <div class="container">
+
+        <div class="section-header center reveal">
+
+            <span class="eyebrow">Our Approach</span>
+
+            <h2 class="section-title">
+                Simple. Professional. <span>Transparent.</span>
+            </h2>
+
+            <p class="section-description" style="margin:auto;">
+                We keep the process straightforward while maintaining
+                professional standards from initial consultation
+                through final delivery.
+            </p>
+
+        </div>
+
+
+        <div class="process-grid">
+
+            <div class="process-step reveal">
+
+                <div class="process-number">01</div>
+
+                <h3>Consultation</h3>
+
+                <p>
+                    We understand your property, requirements,
+                    location and purpose.
+                </p>
+
+            </div>
+
+
+            <div class="process-step reveal">
+
+                <div class="process-number">02</div>
+
+                <h3>Inspection & Research</h3>
+
+                <p>
+                    Our team undertakes the necessary field work,
+                    inspection, measurements and research.
+                </p>
+
+            </div>
+
+
+            <div class="process-step reveal">
+
+                <div class="process-number">03</div>
+
+                <h3>Analysis</h3>
+
+                <p>
+                    Relevant property, market and technical
+                    information is analysed.
+                </p>
+
+            </div>
+
+
+            <div class="process-step reveal">
+
+                <div class="process-number">04</div>
+
+                <h3>Report / Delivery</h3>
+
+                <p>
+                    We provide the professional report, advice
+                    or service deliverable required.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     CTA
+====================================================== -->
+
+<section class="cta">
+
+    <div class="container cta-inner">
+
+        <div>
+
+            <h2>
+                Have a property requirement?
+            </h2>
+
+            <p>
+                Speak with Earnest Property Services about valuation,
+                surveying, property management, project management,
+                development or property research.
+            </p>
+
+        </div>
+
+        <div class="cta-actions">
+
+            <a
+                href="https://wa.me/256781515588"
+                target="_blank"
+                class="btn btn-red"
+            >
+                WhatsApp Us
+            </a>
+
+           <a
+    href="contact.html"
+    class="btn btn-outline"
+>
+    Send an Enquiry
+</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     CONTACT
+====================================================== -->
+
+<section class="section contact" id="contact">
+
+    <div class="container contact-grid">
+
+        <div class="reveal">
+
+            <span class="eyebrow">Contact Us</span>
+
+            <h2 class="section-title">
+                Let's discuss your <span>property.</span>
+            </h2>
+
+            <p class="section-description">
+                Contact our team for professional property,
+                surveying, management, development or research
+                services.
+            </p>
+
+
+            <div class="contact-details">
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">☎</div>
+
+                    <div>
+
+                        <small>Phone</small>
+
+                        <strong>
+                            <a href="tel:+256781515588">
+                                +256 781 515 588
+                            </a>
+                            <br>
+                            <a href="tel:+256701476187">
+                                +256 701 476 187
+                            </a>
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">@</div>
+
+                    <div>
+
+                        <small>Email</small>
+
+                        <strong>
+                            <a href="mailto:earnestpropertysv@gmail.com">
+                                earnestpropertysv@gmail.com
+                            </a>
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">WA</div>
+
+                    <div>
+
+                        <small>WhatsApp</small>
+
+                        <strong>
+                            <a
+                                href="https://wa.me/256781515588"
+                                target="_blank"
+                            >
+                                Chat with us on WhatsApp
+                            </a>
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">⌖</div>
+
+                    <div>
+
+                        <small>Office</small>
+
+                        <strong>
+                            Plot 20/21 Gayaza Road,
+                            Spot Complex, Kasangati,
+                            4th Floor, Suite 36,
+                            P.O. Box 24743, Kampala, Uganda
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FORM -->
+
+        <div class="form-box reveal">
+
+            <h3>Request a Service</h3>
+
+            <p>
+                Submit your details and the enquiry will open
+                directly in WhatsApp for quick communication.
+            </p>
+
+            <form id="contactForm">
+
+                <div class="form-row">
+
+                    <div class="field">
+
+                        <label>Full Name</label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            required
+                            placeholder="Your name"
+                        >
+
+                    </div>
+
+
+                    <div class="field">
+
+                        <label>Phone</label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            required
+                            placeholder="+256..."
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>Email</label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="your@email.com"
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>Service Required</label>
+
+                    <select id="service" required>
+
+                        <option value="">
+                            Select a service
+                        </option>
+
+                        <option>Property Valuation</option>
+                        <option>Land Surveying</option>
+                        <option>Property Management</option>
+                        <option>Project Management</option>
+                        <option>Property Development</option>
+                        <option>Property Research</option>
+                        <option>Insurance Valuation</option>
+                        <option>Mortgage / Bank Valuation</option>
+                        <option>Court / Dispute Valuation</option>
+                        <option>Other</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>Property Location</label>
+
+                    <input
+                        type="text"
+                        id="location"
+                        placeholder="e.g. Wakiso, Kampala, Jinja..."
+                    >
+
+                </div>
+
+
+                <div class="field">
+
+                    <label>Message</label>
+
+                    <textarea
+                        id="message"
+                        placeholder="Tell us briefly about your requirement..."
+                    ></textarea>
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="form-submit"
+                >
+                    Send Enquiry via WhatsApp →
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <div class="container footer-main">
+
+        <div>
+
+            <img
+                src="logo.png"
+                class="footer-logo"
+                alt="Earnest Property Services"
+            >
+
+            <p class="footer-about">
+                Professional property valuation, land surveying,
+                property management, project management,
+                property development and research services
+                across Uganda.
+            </p>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h4>Services</h4>
+
+            <ul>
+
+                <li>
+    <a href="services.html">
+        Property Valuation
+    </a>
+</li>
+
+<li>
+    <a href="services.html">
+        Land Surveying
+    </a>
+</li>
+
+<li>
+    <a href="services.html">
+        Property Management
+    </a>
+</li>
+
+<li>
+    <a href="services.html">
+        Project Management
+    </a>
+</li>
+
+<li>
+    <a href="services.html">
+        Property Development
+    </a>
+</li>
+
+<li>
+    <a href="services.html">
+        Property Research
+    </a>
+</li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h4>Company</h4>
+
+            <ul>
+
+                <li><a href="about.html">About Us</a></li>
+
+              <li><a href="index.html#why">Why Us</a></li>
+
+              <li><a href="index.html#process">Our Process</a></li>
+
+             <li><a href="contact.html">Contact</a></li>
+
+             <li>
+             <a href="https://wa.me/256781515588" target="_blank">
+        WhatsApp
+    </a>
+</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        <span>
+            © 2026 Earnest Property Services. All rights reserved.
+        </span>
+
+        <span>
+            SRB No. 555 · M.I.S.U · R.S.U · BSc. Land Economics
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- ======================================================
+     FLOATING WHATSAPP
+====================================================== -->
+
+<a
+    href="https://wa.me/256781515588"
+    target="_blank"
+    class="whatsapp"
+    aria-label="Chat with Earnest Property Services on WhatsApp"
+    title="Chat with us on WhatsApp"
+>
+
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20.52 3.48A11.86 11.86 0 0 0 12.08 0C5.5 0 .15 5.35.15 11.93c0 2.1.55 4.15 1.59 5.96L.05 24l6.25-1.64a11.9 11.9 0 0 0 5.78 1.47h.01c6.57 0 11.91-5.35 11.91-11.93 0-3.18-1.24-6.17-3.48-8.42zM12.09 21.85h-.01a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.71.97.99-3.62-.23-.37a9.87 9.87 0 0 1-1.51-5.31C2.21 6.47 6.64 2.04 12.08 2.04c2.64 0 5.12 1.03 6.98 2.89a9.85 9.85 0 0 1 2.89 7c0 5.45-4.43 9.92-9.86 9.92zm5.43-7.43c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.67-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+</svg>
+
+</a>
+
+
+<!-- ======================================================
+     SCROLL TOP
+====================================================== -->
+
+<button class="scroll-top" id="scrollTop">
+    ↑
+</button>
+
+
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+<script src="script.js"></script>
+
+</body>
+</html>

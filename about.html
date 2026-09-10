@@ -1,0 +1,2257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Us | Earnest Property Services Uganda</title>
+
+<meta
+    name="description"
+    content="Learn about Earnest Property Services, a professional property valuation, surveying, management and real estate consultancy serving clients across Uganda."
+>
+
+<meta name="theme-color" content="#073b9b">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+>
+
+<style>
+
+/* =========================================================
+   BRAND
+========================================================= */
+
+:root {
+    --blue: #063b9f;
+    --blue-dark: #052d78;
+    --blue-deep: #061b3d;
+
+    --red: #d71920;
+    --red-dark: #ad1117;
+
+    --white: #ffffff;
+    --off-white: #f7f9fc;
+    --light-blue: #edf3ff;
+
+    --text: #172033;
+    --muted: #667085;
+    --border: #e5e9f0;
+
+    --shadow: 0 15px 45px rgba(6, 27, 61, .10);
+
+    --heading: "Manrope", sans-serif;
+    --body: "Inter", sans-serif;
+
+    --radius: 12px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body);
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font: inherit;
+}
+
+
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+.container {
+    width: min(1180px, 92%);
+    margin: auto;
+}
+
+.section {
+    padding: 85px 0;
+}
+
+.eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    color: var(--red);
+
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+
+    margin-bottom: 12px;
+}
+
+.eyebrow::before {
+    content: "";
+
+    width: 24px;
+    height: 2px;
+
+    background: var(--red);
+}
+
+.section-title {
+    font-family: var(--heading);
+
+    font-size: clamp(30px, 4vw, 48px);
+    line-height: 1.1;
+
+    letter-spacing: -1.5px;
+
+    color: var(--blue-deep);
+
+    margin-bottom: 17px;
+}
+
+.section-title span {
+    color: var(--blue);
+}
+
+.section-description {
+    color: var(--muted);
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 650px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    min-height: 48px;
+    padding: 0 22px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: .25s ease;
+}
+
+.btn-primary {
+    color: white;
+    background: var(--blue);
+}
+
+.btn-primary:hover {
+    background: var(--blue-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(6,59,159,.22);
+}
+
+.btn-red {
+    color: white;
+    background: var(--red);
+}
+
+.btn-red:hover {
+    background: var(--red-dark);
+    transform: translateY(-2px);
+}
+
+.btn-outline {
+    color: white;
+    border: 1px solid rgba(255,255,255,.35);
+}
+
+.btn-outline:hover {
+    background: white;
+    color: var(--blue);
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.topbar {
+    background: var(--blue-deep);
+    color: rgba(255,255,255,.75);
+    font-size: 11px;
+}
+
+.topbar-inner {
+    min-height: 36px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 20px;
+}
+
+.topbar-links {
+    display: flex;
+    gap: 22px;
+}
+
+.topbar a:hover {
+    color: white;
+}
+
+
+/* =========================================================
+   NAVIGATION
+========================================================= */
+
+.navbar {
+    position: sticky;
+    top: 0;
+
+    z-index: 1000;
+
+    background: rgba(255,255,255,.96);
+
+    backdrop-filter: blur(14px);
+
+    border-bottom: 1px solid var(--border);
+}
+
+.nav-inner {
+    min-height: 78px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 210px;
+    max-height: 62px;
+
+    object-fit: contain;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+
+    gap: 27px;
+
+    list-style: none;
+}
+
+.nav-links a {
+    position: relative;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    color: #344054;
+}
+
+.nav-links a::after {
+    content: "";
+
+    position: absolute;
+
+    bottom: -9px;
+    left: 0;
+
+    width: 0;
+    height: 2px;
+
+    background: var(--red);
+
+    transition: .25s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--blue);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-cta {
+    background: var(--red) !important;
+    color: white !important;
+
+    padding: 11px 17px;
+
+    border-radius: 5px;
+}
+
+.nav-cta::after {
+    display: none;
+}
+
+.menu-btn {
+    display: none;
+
+    border: 0;
+    background: none;
+
+    cursor: pointer;
+}
+
+.menu-btn span {
+    display: block;
+
+    width: 25px;
+    height: 2px;
+
+    margin: 5px 0;
+
+    background: var(--blue-deep);
+}
+
+
+/* =========================================================
+   ABOUT HERO
+========================================================= */
+
+.about-hero {
+    position: relative;
+
+    min-height: 470px;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            100deg,
+            rgba(4,25,58,.98),
+            rgba(5,45,120,.92)
+        );
+}
+
+.about-hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 520px;
+    height: 520px;
+
+    right: -160px;
+    top: -150px;
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 75px rgba(255,255,255,.018),
+        0 0 0 150px rgba(255,255,255,.012);
+}
+
+.about-hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 3px;
+    height: 190px;
+
+    left: 0;
+    bottom: 0;
+
+    background: var(--red);
+}
+
+.about-hero-content {
+    position: relative;
+
+    z-index: 2;
+
+    padding: 85px 0;
+
+    max-width: 760px;
+}
+
+.hero-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+
+    color: white;
+
+    background: rgba(255,255,255,.08);
+
+    border: 1px solid rgba(255,255,255,.14);
+
+    padding: 8px 13px;
+
+    border-radius: 5px;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 1.4px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 23px;
+}
+
+.hero-kicker i {
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: var(--red);
+}
+
+.about-hero h1 {
+    font-family: var(--heading);
+
+    color: white;
+
+    font-size: clamp(42px, 6vw, 68px);
+
+    line-height: 1.04;
+
+    letter-spacing: -3px;
+
+    margin-bottom: 20px;
+}
+
+.about-hero h1 span {
+    color: #4e8dff;
+}
+
+.about-hero p {
+    max-width: 650px;
+
+    color: rgba(255,255,255,.72);
+
+    font-size: 16px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.introduction {
+    background: white;
+}
+
+.introduction-grid {
+    display: grid;
+
+    grid-template-columns: 1.05fr .95fr;
+
+    gap: 75px;
+
+    align-items: center;
+}
+
+.introduction-copy p {
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-bottom: 18px;
+}
+
+.introduction-copy strong {
+    color: var(--blue-deep);
+}
+
+.intro-highlight {
+    margin-top: 28px;
+
+    padding: 20px 22px;
+
+    background: var(--light-blue);
+
+    border-left: 4px solid var(--red);
+
+    border-radius: 7px;
+}
+
+.intro-highlight strong {
+    display: block;
+
+    font-family: var(--heading);
+
+    color: var(--blue-deep);
+
+    font-size: 15px;
+
+    margin-bottom: 5px;
+}
+
+.intro-highlight span {
+    color: var(--muted);
+
+    font-size: 12px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   COMPANY PROFILE CARD
+========================================================= */
+
+.profile-card {
+    background: var(--blue-deep);
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+}
+
+.profile-header {
+    padding: 28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--blue),
+            var(--blue-dark)
+        );
+}
+
+.profile-header small {
+    display: block;
+
+    color: rgba(255,255,255,.6);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 7px;
+}
+
+.profile-header h3 {
+    color: white;
+
+    font-family: var(--heading);
+
+    font-size: 25px;
+}
+
+.profile-body {
+    padding: 28px;
+}
+
+.profile-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.profile-row:last-child {
+    border-bottom: 0;
+}
+
+.profile-row span {
+    color: rgba(255,255,255,.48);
+
+    font-size: 10px;
+}
+
+.profile-row strong {
+    color: white;
+
+    font-size: 11px;
+
+    text-align: right;
+}
+
+
+/* =========================================================
+   MISSION VISION
+========================================================= */
+
+.mission {
+    background: var(--off-white);
+}
+
+.mission-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
+}
+
+.mission-card {
+    padding: 38px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 11px;
+
+    transition: .3s ease;
+}
+
+.mission-card:hover {
+    transform: translateY(-4px);
+
+    box-shadow: var(--shadow);
+
+    border-color: #cbd8ee;
+}
+
+.mission-number {
+    width: 43px;
+    height: 43px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 8px;
+
+    background: var(--blue);
+
+    color: white;
+
+    font-family: var(--heading);
+
+    font-size: 12px;
+    font-weight: 800;
+
+    margin-bottom: 20px;
+}
+
+.mission-card h3 {
+    font-family: var(--heading);
+
+    color: var(--blue-deep);
+
+    font-size: 22px;
+
+    margin-bottom: 10px;
+}
+
+.mission-card p {
+    color: var(--muted);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   VALUES
+========================================================= */
+
+.values {
+    background: white;
+}
+
+.values-header {
+    max-width: 700px;
+
+    margin: 0 auto 45px;
+
+    text-align: center;
+}
+
+.values-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 17px;
+}
+
+.value-card {
+    padding: 25px 20px;
+
+    border: 1px solid var(--border);
+
+    border-radius: 10px;
+
+    background: white;
+}
+
+.value-icon {
+    width: 38px;
+    height: 38px;
+
+    display: grid;
+    place-items: center;
+
+    background: var(--light-blue);
+
+    color: var(--blue);
+
+    border-radius: 7px;
+
+    font-size: 11px;
+
+    font-weight: 800;
+
+    margin-bottom: 17px;
+}
+
+.value-card h3 {
+    font-family: var(--heading);
+
+    color: var(--blue-deep);
+
+    font-size: 14px;
+
+    margin-bottom: 6px;
+}
+
+.value-card p {
+    color: var(--muted);
+
+    font-size: 11px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   PRINCIPAL
+========================================================= */
+
+.principal {
+    background: var(--off-white);
+}
+
+.principal-grid {
+    display: grid;
+
+    grid-template-columns: .8fr 1.2fr;
+
+    gap: 70px;
+
+    align-items: center;
+}
+
+.principal-card {
+    background: var(--blue-deep);
+
+    border-radius: 14px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+}
+
+.principal-top {
+    padding: 35px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--blue),
+            var(--blue-dark)
+        );
+}
+
+.principal-top img {
+    width: 175px;
+    height: 175px;
+
+    object-fit: contain;
+
+    margin: auto;
+
+    background: white;
+
+    border-radius: 9px;
+
+    padding: 10px;
+}
+
+.principal-body {
+    padding: 25px 30px;
+
+    text-align: center;
+}
+
+.principal-body h3 {
+    color: white;
+
+    font-family: var(--heading);
+
+    font-size: 21px;
+
+    margin-bottom: 4px;
+}
+
+.principal-body p {
+    color: rgba(255,255,255,.55);
+
+    font-size: 11px;
+}
+
+.principal-copy p {
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    margin-bottom: 17px;
+}
+
+.credentials-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 12px;
+
+    margin-top: 25px;
+}
+
+.credential {
+    padding: 17px;
+
+    background: white;
+
+    border: 1px solid var(--border);
+
+    border-radius: 8px;
+}
+
+.credential strong {
+    display: block;
+
+    color: var(--blue-deep);
+
+    font-size: 12px;
+
+    margin-bottom: 4px;
+}
+
+.credential span {
+    color: var(--muted);
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   PROFESSIONAL COMMITMENT
+========================================================= */
+
+.commitment {
+    background: white;
+}
+
+.commitment-box {
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 55px;
+
+    background:
+        linear-gradient(
+            110deg,
+            var(--blue-deep),
+            var(--blue)
+        );
+
+    border-radius: 14px;
+
+    color: white;
+}
+
+.commitment-box::after {
+    content: "";
+
+    position: absolute;
+
+    width: 320px;
+    height: 320px;
+
+    right: -130px;
+    top: -140px;
+
+    border: 1px solid rgba(255,255,255,.1);
+
+    border-radius: 50%;
+}
+
+.commitment-content {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 760px;
+}
+
+.commitment-box .eyebrow {
+    color: #ff5960;
+}
+
+.commitment-box h2 {
+    font-family: var(--heading);
+
+    font-size: clamp(28px,4vw,43px);
+
+    line-height: 1.1;
+
+    margin-bottom: 14px;
+}
+
+.commitment-box p {
+    color: rgba(255,255,255,.67);
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    max-width: 680px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta {
+    padding: 65px 0;
+
+    background:
+        linear-gradient(
+            100deg,
+            var(--blue-deep),
+            var(--blue)
+        );
+
+    color: white;
+}
+
+.cta-inner {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 40px;
+}
+
+.cta h2 {
+    font-family: var(--heading);
+
+    font-size: clamp(28px,4vw,42px);
+
+    line-height: 1.1;
+
+    margin-bottom: 10px;
+}
+
+.cta p {
+    color: rgba(255,255,255,.65);
+
+    font-size: 13px;
+
+    max-width: 590px;
+}
+
+.cta-actions {
+    display: flex;
+
+    gap: 10px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+    background: var(--blue-deep);
+
+    color: white;
+}
+
+.footer-main {
+    padding: 55px 0 40px;
+
+    display: grid;
+
+    grid-template-columns: 1.6fr 1fr 1fr;
+
+    gap: 55px;
+}
+
+.footer-logo {
+    width: 220px;
+
+    background: white;
+
+    padding: 7px;
+
+    border-radius: 5px;
+
+    margin-bottom: 18px;
+}
+
+.footer-about {
+    color: rgba(255,255,255,.5);
+
+    font-size: 11px;
+
+    max-width: 330px;
+
+    line-height: 1.8;
+}
+
+.footer-col h4 {
+    font-size: 10px;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 18px;
+}
+
+.footer-col ul {
+    list-style: none;
+
+    display: grid;
+
+    gap: 9px;
+}
+
+.footer-col li a {
+    color: rgba(255,255,255,.5);
+
+    font-size: 11px;
+}
+
+.footer-col li a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,.08);
+
+    padding: 18px 0;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    color: rgba(255,255,255,.35);
+
+    font-size: 10px;
+}
+
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+
+.whatsapp {
+    position: fixed;
+
+    right: 22px;
+    bottom: 22px;
+
+    z-index: 2000;
+
+    width: 58px;
+    height: 58px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 50%;
+
+    background: #25D366;
+
+    color: white;
+
+    box-shadow: 0 8px 30px rgba(0,0,0,.2);
+
+    transition: .25s;
+}
+
+.whatsapp:hover {
+    transform: translateY(-4px) scale(1.05);
+}
+
+.whatsapp svg {
+    width: 29px;
+    height: 29px;
+
+    fill: white;
+}
+
+
+/* =========================================================
+   REVEAL
+========================================================= */
+
+.reveal {
+    opacity: 0;
+
+    transform: translateY(18px);
+
+    transition: .7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width: 950px) {
+
+    .nav-links {
+        position: fixed;
+
+        top: 114px;
+        left: 0;
+        right: 0;
+
+        background: white;
+
+        display: none;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 20px 6% 25px;
+
+        border-bottom: 1px solid var(--border);
+
+        box-shadow: 0 20px 30px rgba(0,0,0,.08);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links a {
+        padding: 9px 0;
+    }
+
+    .nav-links a::after {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .introduction-grid,
+    .principal-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+
+@media(max-width: 650px) {
+
+    .topbar {
+        display: none;
+    }
+
+    .nav-inner {
+        min-height: 74px;
+    }
+
+    .logo img {
+        width: 170px;
+    }
+
+    .nav-links {
+        top: 74px;
+    }
+
+    .about-hero {
+        min-height: 500px;
+    }
+
+    .about-hero-content {
+        padding: 65px 0;
+    }
+
+    .about-hero h1 {
+        font-size: 43px;
+
+        letter-spacing: -2px;
+    }
+
+    .about-hero p {
+        font-size: 14px;
+    }
+
+    .section {
+        padding: 58px 0;
+    }
+
+    .mission-grid,
+    .values-grid,
+    .credentials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .commitment-box {
+        padding: 35px 25px;
+    }
+
+    .cta-inner {
+        display: block;
+    }
+
+    .cta-actions {
+        margin-top: 22px;
+
+        flex-wrap: wrap;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+    }
+
+    .whatsapp {
+        width: 54px;
+        height: 54px;
+
+        right: 15px;
+        bottom: 15px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ======================================================
+     TOP BAR
+====================================================== -->
+
+<div class="topbar">
+
+    <div class="container topbar-inner">
+
+        <span>
+            Professional Property & Real Estate Consultancy · Uganda
+        </span>
+
+        <div class="topbar-links">
+
+            <a href="tel:+256781515588">
+                +256 781 515 588
+            </a>
+
+            <a href="mailto:earnestpropertysv@gmail.com">
+                earnestpropertysv@gmail.com
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ======================================================
+     NAVIGATION
+====================================================== -->
+
+<header class="navbar">
+
+    <div class="container nav-inner">
+
+        <a href="index.html" class="logo">
+
+            <img
+                src="logo.png"
+                alt="Earnest Property Services"
+            >
+
+        </a>
+
+
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="Open navigation"
+        >
+
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </button>
+
+
+        <ul class="nav-links" id="navLinks">
+
+            <li>
+                <a href="index.html">
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href="about.html" class="active">
+                    About
+                </a>
+            </li>
+
+            <li>
+                <a href="services.html">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="projects.html">
+                    Projects
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+            <li>
+                <a
+                    href="contact.html"
+                    class="nav-cta"
+                >
+                    Request a Service
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</header>
+
+
+<!-- ======================================================
+     ABOUT HERO
+====================================================== -->
+
+<section class="about-hero">
+
+    <div class="container">
+
+        <div class="about-hero-content reveal">
+
+            <div class="hero-kicker">
+
+                <i></i>
+
+                About Earnest Property Services
+
+            </div>
+
+
+            <h1>
+                Professional people behind
+                <span>better property decisions.</span>
+            </h1>
+
+
+            <p>
+                We are a professional property and real estate
+                consultancy providing valuation, surveying,
+                management, development and property research
+                services across Uganda.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     INTRODUCTION
+====================================================== -->
+
+<section class="section introduction">
+
+    <div class="container introduction-grid">
+
+
+        <div class="introduction-copy reveal">
+
+            <span class="eyebrow">
+                Who We Are
+            </span>
+
+
+            <h2 class="section-title">
+                A trusted professional partner for
+                <span>property.</span>
+            </h2>
+
+
+            <p>
+                <strong>Earnest Property Services</strong> is a
+                professional property and real estate consultancy
+                serving individuals, businesses, investors,
+                financial institutions and other organisations
+                across Uganda.
+            </p>
+
+
+            <p>
+                Our work is focused on providing reliable
+                professional information, technical property
+                services and practical advice that helps clients
+                make informed decisions about land and property.
+            </p>
+
+
+            <p>
+                From valuation and land surveying to property
+                management, project management, development
+                advisory and property research, we support clients
+                across different stages of the property lifecycle.
+            </p>
+
+
+            <div class="intro-highlight">
+
+                <strong>
+                    Professional information. Practical advice.
+                </strong>
+
+                <span>
+                    We combine technical knowledge, local market
+                    understanding and field experience to provide
+                    dependable property services.
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <!-- COMPANY PROFILE -->
+
+        <div class="profile-card reveal">
+
+            <div class="profile-header">
+
+                <small>
+                    Company Profile
+                </small>
+
+                <h3>
+                    Earnest Property Services
+                </h3>
+
+            </div>
+
+
+            <div class="profile-body">
+
+                <div class="profile-row">
+
+                    <span>
+                        Business
+                    </span>
+
+                    <strong>
+                        Property Consultancy
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span>
+                        Location
+                    </span>
+
+                    <strong>
+                        Uganda
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span>
+                        Core Expertise
+                    </span>
+
+                    <strong>
+                        Valuation & Surveying
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span>
+                        Additional Services
+                    </span>
+
+                    <strong>
+                        Management & Development
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span>
+                        Professional Registration
+                    </span>
+
+                    <strong>
+                        SRB No. 555
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span>
+                        Professional Membership
+                    </span>
+
+                    <strong>
+                        M.I.S.U · R.S.U
+                    </strong>
+
+                </div>
+
+
+                <div class="profile-row">
+
+                    <span>
+                        Qualification
+                    </span>
+
+                    <strong>
+                        BSc. Land Economics
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     MISSION & VISION
+====================================================== -->
+
+<section class="section mission">
+
+    <div class="container">
+
+        <div class="section-header center reveal">
+
+            <span class="eyebrow">
+                Our Direction
+            </span>
+
+            <h2 class="section-title">
+                What guides <span>our work.</span>
+            </h2>
+
+            <p
+                class="section-description"
+                style="margin:auto;"
+            >
+                Our approach is built around professional
+                responsibility, useful information and creating
+                confidence in property decisions.
+            </p>
+
+        </div>
+
+
+        <div class="mission-grid">
+
+
+            <div class="mission-card reveal">
+
+                <div class="mission-number">
+                    01
+                </div>
+
+                <h3>
+                    Our Mission
+                </h3>
+
+                <p>
+                    To provide professional, accurate and practical
+                    property services that help our clients make
+                    informed decisions, manage property effectively
+                    and achieve their real estate objectives.
+                </p>
+
+            </div>
+
+
+            <div class="mission-card reveal">
+
+                <div class="mission-number">
+                    02
+                </div>
+
+                <h3>
+                    Our Vision
+                </h3>
+
+                <p>
+                    To be a trusted and respected property and real
+                    estate consultancy recognised for professional
+                    integrity, technical competence and dependable
+                    client service across Uganda.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     VALUES
+====================================================== -->
+
+<section class="section values">
+
+    <div class="container">
+
+
+        <div class="values-header reveal">
+
+            <span class="eyebrow">
+                Our Values
+            </span>
+
+            <h2 class="section-title">
+                Principles that shape
+                <span>our service.</span>
+            </h2>
+
+            <p class="section-description" style="margin:auto;">
+                We believe professional property services should
+                be built on trust, accuracy, independence and
+                responsibility.
+            </p>
+
+        </div>
+
+
+        <div class="values-grid">
+
+
+            <div class="value-card reveal">
+
+                <div class="value-icon">
+                    01
+                </div>
+
+                <h3>
+                    Integrity
+                </h3>
+
+                <p>
+                    We approach our work with honesty,
+                    professionalism and responsibility.
+                </p>
+
+            </div>
+
+
+            <div class="value-card reveal">
+
+                <div class="value-icon">
+                    02
+                </div>
+
+                <h3>
+                    Accuracy
+                </h3>
+
+                <p>
+                    We place importance on reliable information,
+                    careful analysis and professional reporting.
+                </p>
+
+            </div>
+
+
+            <div class="value-card reveal">
+
+                <div class="value-icon">
+                    03
+                </div>
+
+                <h3>
+                    Independence
+                </h3>
+
+                <p>
+                    Our advice is focused on objective professional
+                    assessment and the client's requirements.
+                </p>
+
+            </div>
+
+
+            <div class="value-card reveal">
+
+                <div class="value-icon">
+                    04
+                </div>
+
+                <h3>
+                    Client Focus
+                </h3>
+
+                <p>
+                    We aim to provide clear communication,
+                    practical solutions and useful deliverables.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     PRINCIPAL
+====================================================== -->
+
+<section class="section principal">
+
+    <div class="container principal-grid">
+
+
+        <div class="principal-card reveal">
+
+            <div class="principal-top">
+
+                <img
+                    src="stamp.png"
+                    alt="Earnest Property Services professional stamp"
+                >
+
+            </div>
+
+
+            <div class="principal-body">
+
+                <h3>
+                    Ojok Steven
+                </h3>
+
+                <p>
+                    Lead Valuer & Principal
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="principal-copy reveal">
+
+            <span class="eyebrow">
+                Professional Leadership
+            </span>
+
+
+            <h2 class="section-title">
+                Technical expertise with a
+                <span>practical approach.</span>
+            </h2>
+
+
+            <p>
+                Earnest Property Services is led by
+                <strong>Ojok Steven</strong>, a property
+                professional with academic training in Land
+                Economics and professional involvement within
+                Uganda's surveying and property sector.
+            </p>
+
+
+            <p>
+                His professional background supports the firm's
+                focus on property valuation, land surveying,
+                market research and broader property consultancy
+                services.
+            </p>
+
+
+            <p>
+                The objective is straightforward: provide clients
+                with professional information and advice that can
+                be relied upon when making important property,
+                investment and development decisions.
+            </p>
+
+
+            <div class="credentials-grid">
+
+
+                <div class="credential">
+
+                    <strong>
+                        BSc. Land Economics
+                    </strong>
+
+                    <span>
+                        Makerere University
+                    </span>
+
+                </div>
+
+
+                <div class="credential">
+
+                    <strong>
+                        M.I.S.U
+                    </strong>
+
+                    <span>
+                        Member, Institution of Surveyors of Uganda
+                    </span>
+
+                </div>
+
+
+                <div class="credential">
+
+                    <strong>
+                        R.S.U
+                    </strong>
+
+                    <span>
+                        Registered Surveyor
+                    </span>
+
+                </div>
+
+
+                <div class="credential">
+
+                    <strong>
+                        SRB No. 555
+                    </strong>
+
+                    <span>
+                        Professional Registration
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     PROFESSIONAL COMMITMENT
+====================================================== -->
+
+<section class="section commitment">
+
+    <div class="container">
+
+        <div class="commitment-box reveal">
+
+            <div class="commitment-content">
+
+                <span class="eyebrow">
+                    Our Commitment
+                </span>
+
+
+                <h2>
+                    Property decisions deserve
+                    professional information.
+                </h2>
+
+
+                <p>
+                    Whether a client is buying land, financing a
+                    property, managing an investment, developing
+                    a project, assessing value or dealing with a
+                    property-related matter, reliable professional
+                    information is essential.
+                </p>
+
+
+                <p>
+                    Our commitment is to provide clear, responsible
+                    and practical property services that help
+                    clients understand their assets and make
+                    better-informed decisions.
+                </p>
+
+
+                <a
+                    href="services.html"
+                    class="btn btn-red"
+                >
+                    Explore Our Services →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     CTA
+====================================================== -->
+
+<section class="cta">
+
+    <div class="container cta-inner">
+
+        <div>
+
+            <h2>
+                Have a property requirement?
+            </h2>
+
+            <p>
+                Speak with Earnest Property Services about
+                valuation, surveying, property management,
+                project management, development or property
+                research.
+            </p>
+
+        </div>
+
+
+        <div class="cta-actions">
+
+            <a
+                href="https://wa.me/256781515588"
+                target="_blank"
+                class="btn btn-red"
+            >
+                WhatsApp Us
+            </a>
+
+
+            <a
+                href="contact.html"
+                class="btn btn-outline"
+            >
+                Contact Our Team
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+<footer>
+
+    <div class="container footer-main">
+
+
+        <div>
+
+            <img
+                src="logo.png"
+                class="footer-logo"
+                alt="Earnest Property Services"
+            >
+
+
+            <p class="footer-about">
+                Professional property valuation, land surveying,
+                property management, project management,
+                property development and research services
+                across Uganda.
+            </p>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h4>
+                Services
+            </h4>
+
+            <ul>
+
+                <li>
+                    <a href="services.html">
+                        Property Valuation
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Land Surveying
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Property Management
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Project Management
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Property Development
+                    </a>
+                </li>
+
+                <li>
+                    <a href="services.html">
+                        Property Research
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="footer-col">
+
+            <h4>
+                Company
+            </h4>
+
+            <ul>
+
+                <li>
+                    <a href="about.html">
+                        About Us
+                    </a>
+                </li>
+
+                <li>
+                    <a href="projects.html">
+                        Projects
+                    </a>
+                </li>
+
+                <li>
+                    <a href="insights.html">
+                        Insights
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+                <li>
+                    <a
+                        href="https://wa.me/256781515588"
+                        target="_blank"
+                    >
+                        WhatsApp
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        <span>
+            © 2026 Earnest Property Services. All rights reserved.
+        </span>
+
+        <span>
+            SRB No. 555 · M.I.S.U · R.S.U · BSc. Land Economics
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- ======================================================
+     FLOATING WHATSAPP
+====================================================== -->
+
+<a
+    href="https://wa.me/256781515588"
+    target="_blank"
+    class="whatsapp"
+    aria-label="Chat with Earnest Property Services on WhatsApp"
+    title="Chat with us on WhatsApp"
+>
+
+ <svg viewBox="0 0 24 24" aria-hidden="true">
+    <path d="M20.52 3.48A11.86 11.86 0 0 0 12.08 0C5.5 0 .15 5.35.15 11.93c0 2.1.55 4.15 1.59 5.96L.05 24l6.25-1.64a11.9 11.9 0 0 0 5.78 1.47h.01c6.57 0 11.91-5.35 11.91-11.93 0-3.18-1.24-6.17-3.48-8.42zM12.09 21.85h-.01a9.9 9.9 0 0 1-5.05-1.38l-.36-.21-3.71.97.99-3.62-.23-.37a9.87 9.87 0 0 1-1.51-5.31C2.21 6.47 6.64 2.04 12.08 2.04c2.64 0 5.12 1.03 6.98 2.89a9.85 9.85 0 0 1 2.89 7c0 5.45-4.43 9.92-9.86 9.92zm5.43-7.43c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.67-2.09-.17-.3-.02-.46.13-.61.14-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.21 5.09 4.5.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.12-.27-.2-.57-.35z"/>
+</svg>
+</a>
+
+
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+<script src="script.js"></script>
+
+</body>
+</html>
